@@ -3,6 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
+import { motion } from "framer-motion";
 import {
   Shield,
   BarChart3,
@@ -14,9 +17,7 @@ import {
   Mail,
   Zap,
 } from "lucide-react";
-import { motion } from "framer-motion";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
+
 
 interface Service {
   icon: React.ElementType;
