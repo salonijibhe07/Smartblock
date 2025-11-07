@@ -1,11 +1,13 @@
-import Link from "next/link"
-import { Facebook, Twitter, Linkedin, Mail } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Twitter, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 py-16 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        {/* Footer Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          {/* About */}
           <div>
             <h4 className="font-bold text-white mb-4">Creator Research</h4>
             <p className="text-sm text-slate-400">
@@ -13,39 +15,41 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Services */}
           <div>
             <h4 className="font-bold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#" className="hover:text-white transition">
+                <Link href="#cyber-security" className="hover:text-white transition">
                   Cyber Security
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition">
+                <Link href="#data-analytics" className="hover:text-white transition">
                   Data Analytics
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition">
-                 Web Development
+                <Link href="#web-development" className="hover:text-white transition">
+                  Web Development
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition">
-                Educational Projects
+                <Link href="#educational-projects" className="hover:text-white transition">
+                  Educational Projects
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition">
-                 Apps Development
+                <Link href="#app-development" className="hover:text-white transition">
+                  App Development
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-white mb-4">Quick links</h4>
+            <h4 className="font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#about" className="hover:text-white transition">
@@ -58,13 +62,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#contacts" className="hover:text-white transition">
+                <Link href="#contact" className="hover:text-white transition">
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Social Connect */}
           <div>
             <h4 className="font-bold text-white mb-4">Connect</h4>
             <div className="flex gap-4">
@@ -84,10 +89,20 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Footer Bottom */}
         <div className="border-t border-slate-800 pt-8">
-          <p className="text-center text-sm text-slate-400">© 2025 Creator Research Pvt. Ltd. All rights reserved.</p>
+          <p className="text-center text-sm text-slate-400">
+            © 2025 Creator Research Pvt. Ltd. All rights reserved.
+          </p>
         </div>
       </div>
+
+      {/* Smooth Scroll Script */}
+      <style jsx>{`
+        a[href^="#"] {
+          scroll-behavior: smooth;
+        }
+      `}</style>
     </footer>
-  )
-}  
+  );
+}
