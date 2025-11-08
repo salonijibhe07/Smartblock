@@ -82,12 +82,11 @@ export default function Home() {
   ];
 
   return (
-    <main
-      className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50 overflow-hidden"
-      style={{ fontFamily: "'Poppins', sans-serif" }}
-    >
-      <Navigation />
-      <Hero />
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
+  <Navigation />
+  <Hero />
+  {/* Rest of your sections */}
+
 
       {/* Domains Section */}
       <section className="py-14 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">

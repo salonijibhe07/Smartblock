@@ -130,7 +130,7 @@ export default function ServicesPage() {
                       <service.icon className="text-white" size={32} aria-label={service.title} />
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed text-sm">{service.description}</p>
+                    <p className="text-gray-600  mb-6 leading-relaxed">{service.description}</p>
 
                     <ul className="space-y-2">
                       {service.features.map((f) => (

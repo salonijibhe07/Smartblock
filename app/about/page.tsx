@@ -72,7 +72,7 @@ export default function AboutPage() {
                   <item.icon className="text-white" size={28} />
                 </div>
                 <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.description}</p>
+                <p className="text-3 text-gray-600">{item.description}</p>
               </div>
             ))}
           </div>
@@ -80,14 +80,13 @@ export default function AboutPage() {
       </section>
 
       {/* Welcome */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <div className="text-center mb-2">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">
               Welcome to <span className="text-blue-900">Creator Research Pvt Ltd</span>
             </h2>
           </div>
-
           
         </div>
       </section>
@@ -100,7 +99,7 @@ export default function AboutPage() {
               <Target className="text-white" size={32} />
             </div>
             <h3 className="text-3xl font-bold text-slate-900 mb-4">Our Vision</h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 text-xl leading-relaxed">
               To become a global leader in PhD research services, offering innovative and practical research solutions that advance knowledge worldwide.
             </p>
           </div>
@@ -110,7 +109,7 @@ export default function AboutPage() {
               <Rocket className="text-white" size={32} />
             </div>
             <h3 className="text-3xl font-bold text-slate-900 mb-4">Our Mission</h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 text-xl leading-relaxed">
               To deliver high-quality, tailored research services that empower our clients to achieve academic excellence and impactful publications.
             </p>
           </div>
